@@ -18,7 +18,7 @@ let package = Package(
         .executableTarget(
             name: "package-info",
             dependencies: [
-                .product(name: "SwiftPM", package: "swift-package-manager")
+                .product(name: "SwiftPM", package: (url: "https://github.com/apple/swift-package-manager", .exact("0.4.0")
             ]
         ),
     ]
